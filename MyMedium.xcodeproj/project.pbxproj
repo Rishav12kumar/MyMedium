@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		808BBA44A21A561D076B3467 /* Pods_MyMedium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47823041960BEFD32BAB9E62 /* Pods_MyMedium.framework */; };
 		9BB276812A05929C004607E3 /* MyMediumApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB276802A05929C004607E3 /* MyMediumApp.swift */; };
 		9BB276832A05929C004607E3 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB276822A05929C004607E3 /* Persistence.swift */; };
 		9BB276862A05929C004607E3 /* MyMedium.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9BB276842A05929C004607E3 /* MyMedium.xcdatamodeld */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		47823041960BEFD32BAB9E62 /* Pods_MyMedium.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyMedium.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BB2767D2A05929C004607E3 /* MyMedium.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyMedium.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BB276802A05929C004607E3 /* MyMediumApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMediumApp.swift; sourceTree = "<group>"; };
 		9BB276822A05929C004607E3 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		9BB276892A05929C004607E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9BB2768B2A05929C004607E3 /* MyMedium.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyMedium.entitlements; sourceTree = "<group>"; };
 		9BB2768D2A05929C004607E3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9BC1B8AD4A0D0ADA68387F5D /* Pods-MyMedium.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyMedium.debug.xcconfig"; path = "Target Support Files/Pods-MyMedium/Pods-MyMedium.debug.xcconfig"; sourceTree = "<group>"; };
+		E4888D88569405C5C777FE36 /* Pods-MyMedium.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyMedium.release.xcconfig"; path = "Target Support Files/Pods-MyMedium/Pods-MyMedium.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				808BBA44A21A561D076B3467 /* Pods_MyMedium.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A6723A8C3B9EC6EB7D039D8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9BC1B8AD4A0D0ADA68387F5D /* Pods-MyMedium.debug.xcconfig */,
+				E4888D88569405C5C777FE36 /* Pods-MyMedium.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		9BB276742A05929C004607E3 = {
 			isa = PBXGroup;
 			children = (
 				9BB2767F2A05929C004607E3 /* MyMedium */,
 				9BB2767E2A05929C004607E3 /* Products */,
+				1A6723A8C3B9EC6EB7D039D8 /* Pods */,
+				A1F07B9013421D9593FAA957 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,6 +92,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		A1F07B9013421D9593FAA957 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				47823041960BEFD32BAB9E62 /* Pods_MyMedium.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -82,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9BB276912A05929C004607E3 /* Build configuration list for PBXNativeTarget "MyMedium" */;
 			buildPhases = (
+				4724085352113BB18A4C6928 /* [CP] Check Pods Manifest.lock */,
 				9BB276792A05929C004607E3 /* Sources */,
 				9BB2767A2A05929C004607E3 /* Frameworks */,
 				9BB2767B2A05929C004607E3 /* Resources */,
+				E6CD7BD709A41A09F9FE3D1B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -139,6 +166,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4724085352113BB18A4C6928 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyMedium-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E6CD7BD709A41A09F9FE3D1B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyMedium/Pods-MyMedium-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyMedium/Pods-MyMedium-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyMedium/Pods-MyMedium-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9BB276792A05929C004607E3 /* Sources */ = {
@@ -266,6 +335,7 @@
 		};
 		9BB276922A05929C004607E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BC1B8AD4A0D0ADA68387F5D /* Pods-MyMedium.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -304,6 +374,7 @@
 		};
 		9BB276932A05929C004607E3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4888D88569405C5C777FE36 /* Pods-MyMedium.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
